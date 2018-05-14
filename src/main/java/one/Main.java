@@ -16,7 +16,6 @@ public class Main {
 		
 		stock.setStockCode("4715");
 		stock.setStockName("GENM");
-		System.out.println(session.connection().getMetaData().getDatabaseProductName());
 		session.save(stock);
 		session.getTransaction().commit();
 	}
